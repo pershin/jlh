@@ -303,17 +303,6 @@ F 4 "25 В" V 6150 2350 50  0000 C CNN "Voltage"
 	1    6300 2350
 	0    -1   1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5CDDCDEB
-P 850 2900
-F 0 "J1" H 768 3125 50  0000 C CNN
-F 1 "Conn_01x03" H 768 3126 50  0001 C CNN
-F 2 "" H 850 2900 50  0001 C CNN
-F 3 "~" H 850 2900 50  0001 C CNN
-	1    850  2900
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2550 1600 2550 3450
 Wire Wire Line
@@ -353,7 +342,7 @@ Wire Wire Line
 	5550 3800 5550 3850
 Connection ~ 5550 3800
 Wire Wire Line
-	6450 2450 7050 2450
+	6450 2450 7000 2450
 $Comp
 L power:GND #PWR04
 U 1 1 5CDFB5A1
@@ -368,7 +357,7 @@ $EndComp
 Wire Wire Line
 	6450 2450 6450 2500
 Wire Wire Line
-	1650 2900 1050 2900
+	1650 2900 1100 2900
 Wire Wire Line
 	1650 2900 1650 2950
 $Comp
@@ -397,28 +386,6 @@ $EndComp
 Wire Wire Line
 	3150 1950 3150 2800
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5CDEE436
-P 7250 1200
-F 0 "J2" H 7330 1146 50  0000 L CNN
-F 1 "Conn_01x02" H 7330 1101 50  0001 L CNN
-F 2 "" H 7250 1200 50  0001 C CNN
-F 3 "~" H 7250 1200 50  0001 C CNN
-	1    7250 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5CDE79E8
-P 7250 2350
-F 0 "J3" H 7330 2296 50  0000 L CNN
-F 1 "Conn_01x02" H 7330 2251 50  0001 L CNN
-F 2 "" H 7250 2350 50  0001 C CNN
-F 3 "~" H 7250 2350 50  0001 C CNN
-	1    7250 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NPN_CBE Q4
 U 1 1 5CE11F8D
 P 5450 3400
@@ -440,4 +407,51 @@ F 3 "~" H 5450 2000 50  0001 C CNN
 	1    5450 2000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5CFB39FB
+P 850 2900
+F 0 "J1" H 768 3217 50  0000 C CNN
+F 1 "5-103639-3" H 768 3126 50  0000 C CNN
+F 2 "" H 850 2900 50  0001 C CNN
+F 3 "~" H 850 2900 50  0001 C CNN
+	1    850  2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3000 1100 3000
+Wire Wire Line
+	1100 3000 1100 2900
+Connection ~ 1100 2900
+Wire Wire Line
+	1100 2900 1050 2900
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5CFB9C5E
+P 7250 2450
+F 0 "J3" H 7330 2442 50  0000 L CNN
+F 1 "T34-BM11-04" H 7330 2351 50  0000 L CNN
+F 2 "" H 7250 2450 50  0001 C CNN
+F 3 "~" H 7250 2450 50  0001 C CNN
+	1    7250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5CFBAB2C
+P 7250 1200
+F 0 "J2" H 7330 1192 50  0000 L CNN
+F 1 "B2P-VH" H 7330 1101 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" H 7250 1200 50  0001 C CNN
+F 3 "~" H 7250 1200 50  0001 C CNN
+	1    7250 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2550 7000 2550
+Wire Wire Line
+	7000 2550 7000 2450
+Connection ~ 7000 2450
+Wire Wire Line
+	7000 2450 7050 2450
 $EndSCHEMATC
