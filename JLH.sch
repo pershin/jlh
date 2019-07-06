@@ -14,29 +14,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6250 6400 6900 6400
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5CFBAB2C
-P 5950 1650
-F 0 "J3" H 6030 1642 50  0000 L CNN
-F 1 "B2P-VH" H 6030 1551 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" H 5950 1650 50  0001 C CNN
-F 3 "~" H 5950 1650 50  0001 C CNN
-	1    5950 1650
+P 5350 1650
+F 0 "J3" H 5430 1642 50  0000 L CNN
+F 1 "B2P-VH" H 5430 1551 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical" H 5350 1650 50  0001 C CNN
+F 3 "~" H 5350 1650 50  0001 C CNN
+	1    5350 1650
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5D4E4D06
-P 5750 2500
-F 0 "#PWR04" H 5750 2250 50  0001 C CNN
-F 1 "GND" H 5755 2327 50  0000 C CNN
-F 2 "" H 5750 2500 50  0001 C CNN
-F 3 "" H 5750 2500 50  0001 C CNN
-	1    5750 2500
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1850 2400 1850 2500
@@ -89,13 +76,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 1700 3200 1650
 Connection ~ 3200 1650
-Wire Wire Line
-	5750 2500 5750 2450
-Wire Wire Line
-	5750 1750 5750 2450
-Connection ~ 5750 2450
-Wire Wire Line
-	5750 2450 5150 2450
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5CFB9C5E
@@ -108,62 +88,7 @@ F 3 "~" H 3450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 2200 5150 2450
-$Comp
-L Device:CP C1
-U 1 1 5D1C591C
-P 5150 2050
-F 0 "C1" H 5300 2150 50  0000 L CNN
-F 1 "4700 мкФ" H 5300 2050 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5188 1900 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-F 4 "50 В" H 5300 1950 50  0000 L CNN "Voltage"
-	1    5150 2050
-	1    0    0    -1  
-$EndComp
-Connection ~ 5150 2450
-Wire Wire Line
-	4550 2450 5150 2450
-Wire Wire Line
 	4550 2350 4550 2450
-Wire Wire Line
-	4550 2050 4550 2000
-$Comp
-L Device:LED D1
-U 1 1 5D3B76F1
-P 4550 2200
-F 0 "D1" V 4589 2083 50  0000 R CNN
-F 1 "LED" V 4498 2083 50  0000 R CNN
-F 2 "" H 4550 2200 50  0001 C CNN
-F 3 "~" H 4550 2200 50  0001 C CNN
-	1    4550 2200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 1650 4550 1650
-Connection ~ 4550 1650
-Wire Wire Line
-	4550 1700 4550 1650
-$Comp
-L Device:R R1
-U 1 1 5D1F445C
-P 4550 1850
-F 0 "R1" H 4650 1950 50  0000 L CNN
-F 1 "2,2 кОм" H 4650 1850 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4480 1850 50  0001 C CNN
-F 3 "~" H 4550 1850 50  0001 C CNN
-F 4 "ОМЛТ-0,5" H 4650 1750 50  0000 L CNN "Description"
-F 5 "0,5 Вт" H 4650 1650 50  0001 L CNN "Watts-min"
-	1    4550 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 1900 5150 1650
-Wire Wire Line
-	5150 1650 5750 1650
-Wire Wire Line
-	4550 1650 5150 1650
-Connection ~ 5150 1650
 Wire Wire Line
 	2000 1400 1850 1400
 Wire Wire Line
@@ -194,12 +119,7 @@ $EndSheet
 Wire Wire Line
 	2600 2200 3950 2200
 Wire Wire Line
-	3950 2200 3950 1650
-Wire Wire Line
 	2600 1100 3950 1100
-Wire Wire Line
-	3950 1100 3950 1650
-Connection ~ 3950 1650
 Wire Wire Line
 	2000 2300 1850 2300
 Wire Wire Line
@@ -257,4 +177,62 @@ Wire Wire Line
 	1300 1800 1250 1800
 Wire Wire Line
 	1400 1700 1250 1700
+$Comp
+L Device:R R1
+U 1 1 5D1F445C
+P 4550 1850
+F 0 "R1" H 4650 1950 50  0000 L CNN
+F 1 "2,2 кОм" H 4650 1850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 4480 1850 50  0001 C CNN
+F 3 "~" H 4550 1850 50  0001 C CNN
+F 4 "ОМЛТ-0,5" H 4650 1750 50  0000 L CNN "Description"
+F 5 "0,5 Вт" H 4650 1650 50  0001 L CNN "Watts-min"
+	1    4550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D3B76F1
+P 4550 2200
+F 0 "D1" V 4589 2083 50  0000 R CNN
+F 1 "LED" V 4498 2083 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4550 2200 50  0001 C CNN
+F 3 "~" H 4550 2200 50  0001 C CNN
+	1    4550 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2050 4550 2000
+Wire Wire Line
+	4550 1650 5150 1650
+Wire Wire Line
+	4550 1700 4550 1650
+Wire Wire Line
+	3950 1100 3950 1650
+Wire Wire Line
+	3950 2200 3950 1650
+Connection ~ 3950 1650
+Wire Wire Line
+	3950 1650 4550 1650
+Connection ~ 4550 1650
+Wire Wire Line
+	5150 1750 5100 1750
+Wire Wire Line
+	5100 1750 5100 2450
+Wire Wire Line
+	5100 2450 4550 2450
+Wire Wire Line
+	5100 2450 5100 2550
+$Comp
+L power:GND #PWR04
+U 1 1 5D2037A8
+P 5100 2550
+F 0 "#PWR04" H 5100 2300 50  0001 C CNN
+F 1 "GND" H 5105 2377 50  0000 C CNN
+F 2 "" H 5100 2550 50  0001 C CNN
+F 3 "" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5100 2450
 $EndSCHEMATC
