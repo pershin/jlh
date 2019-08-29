@@ -36,7 +36,6 @@ Wire Wire Line
 	4700 1800 4400 1800
 Wire Wire Line
 	4400 2750 4400 1800
-Connection ~ 5000 2050
 Wire Wire Line
 	5000 2050 5000 2000
 Wire Wire Line
@@ -133,11 +132,6 @@ Wire Wire Line
 Connection ~ 2600 1400
 Wire Wire Line
 	2000 1400 2600 1400
-Wire Wire Line
-	5000 2150 5600 2150
-Wire Wire Line
-	5000 2050 5000 2150
-Connection ~ 5000 2150
 $Comp
 L Device:Q_NPN_BCE Q6
 U 1 1 5D0F0276
@@ -344,16 +338,16 @@ Wire Wire Line
 	4400 3550 4400 3850
 Wire Wire Line
 	5000 3400 5000 3850
-Text HLabel 6250 1000 2    50   Input ~ 0
+Text HLabel 6800 1000 2    50   Input ~ 0
 VCC
-Text HLabel 6250 3850 2    50   Input ~ 0
+Text HLabel 6800 3850 2    50   Input ~ 0
 GND
 Wire Wire Line
 	2000 3550 2000 3850
 Connection ~ 2600 3850
 Wire Wire Line
 	2000 3850 2600 3850
-Text HLabel 6250 2450 2    50   Input ~ 0
+Text HLabel 6800 2150 2    50   Input ~ 0
 OUT+
 Wire Wire Line
 	1550 2600 1400 2600
@@ -361,7 +355,7 @@ Text HLabel 1400 3850 0    50   Input ~ 0
 IN-
 Text HLabel 1400 2600 0    50   Input ~ 0
 IN+
-Text HLabel 6250 2600 2    50   Input ~ 0
+Text HLabel 6800 2300 2    50   Input ~ 0
 OUT-
 Wire Wire Line
 	1400 3850 2000 3850
@@ -387,41 +381,22 @@ F 3 "~" H 3100 2700 50  0001 C CNN
 	1    3100 2700
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6200 2150 6200 2450
-Wire Wire Line
-	6250 2450 6200 2450
-Wire Wire Line
-	6250 3850 6200 3850
 Connection ~ 5000 3850
-Wire Wire Line
-	6250 2600 6200 2600
-Wire Wire Line
-	6200 2600 6200 3850
-Connection ~ 6200 3850
-Wire Wire Line
-	6200 3850 5000 3850
-Wire Wire Line
-	5000 2150 5000 3000
-Wire Wire Line
-	5900 2150 6200 2150
 $Comp
 L Device:CP C14
 U 1 1 5D0F0333
-P 5750 2150
+P 5900 2150
 AR Path="/5D0D9979/5D0F0333" Ref="C14"  Part="1" 
 AR Path="/5D11B17D/5D0F0333" Ref="C?"  Part="1" 
 AR Path="/5D11CF1A/5D0F0333" Ref="C7"  Part="1" 
-F 0 "C7" V 5400 2150 50  0000 C CNN
-F 1 "4700 мкФ" V 5500 2150 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 5788 2000 50  0001 C CNN
-F 3 "~" H 5750 2150 50  0001 C CNN
-F 4 "35 В" V 5600 2150 50  0000 C CNN "Voltage"
-	1    5750 2150
+F 0 "C7" V 5550 2150 50  0000 C CNN
+F 1 "4700 мкФ" V 5650 2150 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 5938 2000 50  0001 C CNN
+F 3 "~" H 5900 2150 50  0001 C CNN
+F 4 "35 В" V 5750 2150 50  0000 C CNN "Voltage"
+	1    5900 2150
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	6250 1000 5000 1000
 Connection ~ 5000 1000
 $Comp
 L Device:R R15
@@ -439,4 +414,73 @@ F 5 "0,25 Вт" H 3900 2050 50  0001 L CNN "Watts-min"
 	1    3800 2250
 	1    0    0    1   
 $EndComp
+Connection ~ 5000 2050
+Wire Wire Line
+	5000 2050 5000 2150
+Wire Wire Line
+	5000 2150 5750 2150
+Connection ~ 5000 2150
+Wire Wire Line
+	5000 2150 5000 3000
+Connection ~ 6200 3850
+Wire Wire Line
+	6800 2150 6050 2150
+$Comp
+L Device:CP C13
+U 1 1 5D699AFD
+P 6200 1450
+AR Path="/5D0D9979/5D699AFD" Ref="C13"  Part="1" 
+AR Path="/5D11B17D/5D699AFD" Ref="C?"  Part="1" 
+AR Path="/5D11CF1A/5D699AFD" Ref="C6"  Part="1" 
+F 0 "C6" H 6350 1550 50  0000 L CNN
+F 1 "2200 мкФ" H 6350 1450 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6238 1300 50  0001 C CNN
+F 3 "~" H 6200 1450 50  0001 C CNN
+F 4 "50 В" H 6350 1350 50  0000 L CNN "Voltage"
+	1    6200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D69A1FC
+P 5600 1450
+AR Path="/5D11CF1A/5D69A1FC" Ref="C1"  Part="1" 
+AR Path="/5D0D9979/5D69A1FC" Ref="C8"  Part="1" 
+F 0 "C1" H 5715 1496 50  0000 L CNN
+F 1 "0,1 мкФ" H 5715 1405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W8.0mm_P10.00mm_FKS3_FKP3_MKS4" H 5638 1300 50  0001 C CNN
+F 3 "~" H 5600 1450 50  0001 C CNN
+	1    5600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1000 5600 1300
+Wire Wire Line
+	5000 1000 5600 1000
+Connection ~ 5600 1000
+Wire Wire Line
+	5000 3850 5600 3850
+Connection ~ 5600 3850
+Wire Wire Line
+	5600 3850 6200 3850
+Wire Wire Line
+	5600 1000 6200 1000
+Wire Wire Line
+	6200 1300 6200 1000
+Connection ~ 6200 1000
+Wire Wire Line
+	6200 1000 6800 1000
+Wire Wire Line
+	5600 1600 5600 3850
+Wire Wire Line
+	6200 1600 6200 3850
+Wire Wire Line
+	6200 3850 6650 3850
+Wire Wire Line
+	6800 2300 6650 2300
+Wire Wire Line
+	6650 2300 6650 3850
+Connection ~ 6650 3850
+Wire Wire Line
+	6650 3850 6800 3850
 $EndSCHEMATC
