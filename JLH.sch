@@ -8,7 +8,7 @@ Sheet 1 3
 Title "Усилитель JLH"
 Date "2019-04-22"
 Rev ""
-Comp ""
+Comp "Першин С. С."
 Comment1 ""
 Comment2 ""
 Comment3 ""

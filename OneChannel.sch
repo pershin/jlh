@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
-Title ""
+Title "Усилитель JLH"
 Date ""
 Rev ""
-Comp ""
+Comp "Першин С. С."
 Comment1 ""
 Comment2 ""
 Comment3 ""
