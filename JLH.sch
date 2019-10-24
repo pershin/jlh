@@ -301,4 +301,15 @@ F 3 "~" H 9500 5500 50  0001 C CNN
 	1    9500 5500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5DB2042C
+P 10500 5750
+F 0 "H7" H 10600 5796 50  0000 L CNN
+F 1 "M3" H 10600 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 10500 5750 50  0001 C CNN
+F 3 "~" H 10500 5750 50  0001 C CNN
+	1    10500 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
